@@ -22,7 +22,7 @@ This level editor was cut from the level editor used inside Labo Lado team. It i
 2. If you want to dig a hole in the terrain, you need to build your own GodotEngine.
 3. Download the project's code from Github.
 4. Open Godot, open the project(src/project.godot).
-5. Open level1(src/level1.tscn).
+5. Open level1(src/levels/level1.tscn).
 6. Open Corona Simulator to run the project(src/corona/main.lua)
 7. Try to edit the level, then click the Export Scene button.
 8. Enter level 1 in Corona Simulator.
