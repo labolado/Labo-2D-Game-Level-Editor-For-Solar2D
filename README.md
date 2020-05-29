@@ -34,7 +34,7 @@ This level editor was cut from the level editor used inside Labo Lado team. It i
 4. The group with the name "road" is special. All the nodes before it, will behind the main role, and all the nodes after it, will be in front of the main role.
  
 
-##Build Your Own GodotEngine
+## Build Your Own GodotEngine
 
 ### 1. Get the Godot Engine Source
 First, download the Godot Engine source from [here](https://github.com/godotengine/godot), and switch to branch 3.2+.
