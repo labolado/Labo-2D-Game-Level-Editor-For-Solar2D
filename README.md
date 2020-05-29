@@ -5,7 +5,7 @@ This level editor was cut from the level editor used inside Labo Lado team. It i
 
 
 ## Features:
-### 1. Create 2d terrains throught drag-and-drop. 
+### 1. Create 2d terrains through drag-and-drop. 
 ### 2. Custom terrians textures and edges(tracks).  
 ![1](doc/images/1.png) 
 ### 3. Edit physics. Create rectangular, circle or advanced traced shapes, add holes, change material properties and apply collision.  
