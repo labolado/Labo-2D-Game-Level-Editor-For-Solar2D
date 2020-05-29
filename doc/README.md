@@ -5,23 +5,15 @@ This is a level editor cut from the level editor used inside labo lado team. It 
 
 Features:
 1. Create 2d terrains throught drag-and-drop. 
-2. Custom terrians textures and edges(tracks).
+2. Custom terrians textures and edges(tracks).![1](doc/images/1.png)
 
-![1](doc/images/1.png)
+3. Edit physics. Create rectangular, circle or advanced traced shapes, add holes, change material properties and apply collision.![3](doc/images/3-0.png) ![3](doc/images/3-1.png)
 
-3. Edit physics. Create rectangular, circle or advanced traced shapes, add holes, change material properties and apply collision.
-
-![3](doc/images/3-0.png) ![3](doc/images/3-1.png)
-
-4. Create complex physic joints.
-
-![3](doc/images/4.png)
+4. Create complex physic joints.![3](doc/images/4.png)
 5. Insert sub-levels into the main level;
-6. Scritable.
+6. Scritable.![6](doc/images/6.png)
 
-![6](doc/images/6.png)
-
- ##How to start
+##How to start
 1. Download [GodotEngine](https://godotengine.org/);
 2. If you want to dig hode in the terrain, you need to build your own GodotEngine.
 3. Download same project.
