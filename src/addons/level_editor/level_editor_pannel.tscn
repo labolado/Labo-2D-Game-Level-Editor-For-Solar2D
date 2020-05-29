@@ -1,0 +1,250 @@
+
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/level_editor/editor_panel.gd" type="Script" id=1]
+
+[node name="LevelEditor" type="Control"]
+margin_left = 0.455078
+margin_top = -0.910225
+margin_right = 0.455078
+margin_bottom = -0.910225
+script = ExtResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 312.0
+margin_bottom = 194.0
+custom_constants/separation = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 146.0
+margin_bottom = 306.0
+custom_constants/separation = 12
+
+[node name="Export" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
+margin_right = 146.0
+margin_bottom = 62.0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Export"]
+margin_right = 146.0
+margin_bottom = 14.0
+text = "Export"
+
+[node name="Export" type="Button" parent="HBoxContainer/VBoxContainer/Export"]
+margin_top = 18.0
+margin_right = 146.0
+margin_bottom = 38.0
+text = "Export Scene"
+align = 0
+
+[node name="ExportAll" type="Button" parent="HBoxContainer/VBoxContainer/Export"]
+margin_top = 42.0
+margin_right = 146.0
+margin_bottom = 62.0
+text = "Export All Scene"
+align = 0
+
+[node name="Bezier" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
+margin_top = 74.0
+margin_right = 146.0
+margin_bottom = 184.0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Bezier"]
+margin_right = 146.0
+margin_bottom = 14.0
+text = "Bezier"
+
+[node name="AddRoad" type="Button" parent="HBoxContainer/VBoxContainer/Bezier"]
+margin_top = 18.0
+margin_right = 146.0
+margin_bottom = 38.0
+text = "Create Road"
+align = 0
+
+[node name="AddTerrian2" type="Button" parent="HBoxContainer/VBoxContainer/Bezier"]
+margin_top = 42.0
+margin_right = 146.0
+margin_bottom = 62.0
+text = "Create Terrian"
+align = 0
+
+[node name="Hole" type="Button" parent="HBoxContainer/VBoxContainer/Bezier"]
+margin_top = 66.0
+margin_right = 146.0
+margin_bottom = 86.0
+text = "Add Hole"
+align = 0
+
+[node name="Path" type="Button" parent="HBoxContainer/VBoxContainer/Bezier"]
+margin_top = 90.0
+margin_right = 146.0
+margin_bottom = 110.0
+text = "Create Path Follow"
+align = 0
+
+[node name="Physics" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
+editor/display_folded = true
+margin_top = 196.0
+margin_right = 146.0
+margin_bottom = 306.0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Physics"]
+margin_right = 146.0
+margin_bottom = 14.0
+text = "Physic Editor"
+
+[node name="Rect" type="Button" parent="HBoxContainer/VBoxContainer/Physics"]
+margin_top = 18.0
+margin_right = 146.0
+margin_bottom = 38.0
+text = "Create Rect Shape"
+align = 0
+
+[node name="Circle" type="Button" parent="HBoxContainer/VBoxContainer/Physics"]
+margin_top = 42.0
+margin_right = 146.0
+margin_bottom = 62.0
+text = "Create Circle Shape"
+align = 0
+
+[node name="Polygon" type="Button" parent="HBoxContainer/VBoxContainer/Physics"]
+margin_top = 66.0
+margin_right = 146.0
+margin_bottom = 86.0
+text = "Create manual Shape"
+align = 0
+
+[node name="AutoPolygon" type="Button" parent="HBoxContainer/VBoxContainer/Physics"]
+margin_top = 90.0
+margin_right = 146.0
+margin_bottom = 110.0
+text = "Create Auto Shape"
+align = 0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 196.0
+margin_right = 351.0
+margin_bottom = 306.0
+
+[node name="Utils" type="VBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+margin_right = 155.0
+margin_bottom = 66.0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2/Utils"]
+margin_right = 155.0
+margin_bottom = 14.0
+text = "Utils"
+
+[node name="Centering" type="Button" parent="HBoxContainer/VBoxContainer2/Utils"]
+visible = false
+margin_top = 18.0
+margin_right = 155.0
+margin_bottom = 38.0
+text = "CenteringNode2D"
+
+[node name="Clone" type="Button" parent="HBoxContainer/VBoxContainer2/Utils"]
+margin_top = 18.0
+margin_right = 155.0
+margin_bottom = 38.0
+text = "Clone"
+
+[node name="ShowPhysic" type="CheckBox" parent="HBoxContainer/VBoxContainer2/Utils"]
+margin_top = 42.0
+margin_right = 155.0
+margin_bottom = 66.0
+pressed = true
+text = "Show Physic Shapes"
+
+[node name="joints" type="VBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+margin_top = 70.0
+margin_right = 155.0
+margin_bottom = 300.0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_right = 155.0
+margin_bottom = 14.0
+text = "Joints"
+
+[node name="pivot" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 18.0
+margin_right = 155.0
+margin_bottom = 38.0
+text = "Create Pivot Joint"
+align = 0
+
+[node name="weld" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 42.0
+margin_right = 155.0
+margin_bottom = 62.0
+text = "Create Weld Joint"
+align = 0
+
+[node name="wheel" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 66.0
+margin_right = 155.0
+margin_bottom = 86.0
+text = "Create Wheel Joint"
+align = 0
+
+[node name="rope" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 90.0
+margin_right = 155.0
+margin_bottom = 110.0
+text = "Create Rope Joint"
+align = 0
+
+[node name="distance" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 114.0
+margin_right = 155.0
+margin_bottom = 134.0
+text = "Create Distance Joint"
+align = 0
+
+[node name="piston" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 138.0
+margin_right = 155.0
+margin_bottom = 158.0
+text = "Create Piston Joint"
+align = 0
+
+[node name="friction" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 162.0
+margin_right = 155.0
+margin_bottom = 182.0
+text = "Create Friction Joint"
+align = 0
+
+[node name="pulley" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 186.0
+margin_right = 155.0
+margin_bottom = 206.0
+text = "Create Pulley Joint"
+align = 0
+
+[node name="gear" type="Button" parent="HBoxContainer/VBoxContainer2/joints"]
+margin_top = 210.0
+margin_right = 155.0
+margin_bottom = 230.0
+text = "Create Gear Joint"
+align = 0
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Export/Export" to="." method="_on_Export_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Export/ExportAll" to="." method="_on_ExportAll_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Bezier/AddRoad" to="." method="_on_AddRoad_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Bezier/AddTerrian2" to="." method="_on_AddTerrian_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Bezier/Hole" to="." method="_on_Hole_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Bezier/Path" to="." method="_on_Path_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Physics/Rect" to="." method="_on_Rect_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Physics/Circle" to="." method="_on_Circle_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Physics/Polygon" to="." method="_on_Polygon_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Physics/AutoPolygon" to="." method="_on_AutoPolygon_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/Utils/Centering" to="." method="_on_Centering_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/Utils/Clone" to="." method="_on_Clone_pressed"]
+[connection signal="toggled" from="HBoxContainer/VBoxContainer2/Utils/ShowPhysic" to="." method="_on_ShowPhysic_toggled"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/pivot" to="." method="_on_pivot_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/weld" to="." method="_on_weld_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/wheel" to="." method="_on_wheel_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/rope" to="." method="_on_rope_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/distance" to="." method="_on_distance_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/piston" to="." method="_on_piston_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/friction" to="." method="_on_friction_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/pulley" to="." method="_on_pulley_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/joints/gear" to="." method="_on_gear_pressed"]

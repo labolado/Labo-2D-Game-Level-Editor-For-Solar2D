@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://corona/assets/levels/other/girl/run-1.png" type="Texture" id=1]
+[ext_resource path="res://corona/assets/levels/other/girl/run-2.png" type="Texture" id=2]
+[ext_resource path="res://corona/assets/levels/other/girl/run-3.png" type="Texture" id=3]
+[ext_resource path="res://corona/assets/levels/other/girl/run-4.png" type="Texture" id=4]
+[ext_resource path="res://corona/assets/levels/other/girl/run-5.png" type="Texture" id=5]
+[ext_resource path="res://corona/assets/levels/other/girl/run-6.png" type="Texture" id=6]
+[ext_resource path="res://corona/assets/levels/other/girl/run-7.png" type="Texture" id=7]
+[ext_resource path="res://corona/assets/levels/other/girl/run-8.png" type="Texture" id=8]
+[ext_resource path="res://addons/level_editor/lh_animated_sprite.gd" type="Script" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="girl" type="AnimatedSprite"]
+frames = SubResource( 1 )
+script = ExtResource( 9 )
+sprite_sheet_path = ""
+on_load = ""
+on_role_collied = ""
+on_role_collied_1 = ""
+on_collided_with = ""
+on_player_trigger = ""
+on_collided_with_ended = ""
+on_repeatable_collided = ""
+on_repeatable_collided_1 = ""
+on_rpt_collided_with = ""
+on_rpt_collided_with_ended = ""
+on_button_press = ""
+on_button_release = ""
+on_car_end = ""
+on_car_end_1 = ""
+on_re_car_end = ""
+on_re_car_end_1 = ""
+on_counter = ""
+on_rpt_counter = ""
+on_touch = ""
+on_camera = ""
+object_type = "nophysic"
+handle_all = false
+is_bullet = false
+fixed_roation = false
+can_sleep = true
+gravity_scale = 1.0
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damping = 0.0
+angular_damping = 0.0
+is_sensor = false
+density = 0.2
+friction = 0.2
+bounce = 0.2
+group_index = 0
+category = 0
+mask = 65535

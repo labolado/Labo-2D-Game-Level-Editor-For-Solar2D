@@ -1,0 +1,8 @@
+Import('env')
+Import('env_modules')
+
+env_earcut = env_modules.Clone()
+
+env_earcut.Append(CCFLAGS="-std=c++11")
+
+env_earcut.add_source_files(env.modules_sources,"*.cpp")

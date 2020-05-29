@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://corona/assets/levels/sprites/joystick/yao-diban.png" type="Texture" id=1]
+[ext_resource path="res://addons/level_editor/lh_sprite.gd" type="Script" id=2]
+
+[node name="yao-diban" type="Sprite"]
+position = Vector2( -4.62695, -5.76257 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+size = Vector2( 396, 386 )
+on_load = ""
+on_role_collied = ""
+on_role_collied_1 = ""
+on_collided_with = ""
+on_player_trigger = ""
+on_collided_with_ended = ""
+on_repeatable_collided = ""
+on_repeatable_collided_1 = ""
+on_rpt_collided_with = ""
+on_rpt_collided_with_ended = ""
+on_button_press = ""
+on_button_release = ""
+on_car_end = ""
+on_car_end_1 = ""
+on_re_car_end = ""
+on_re_car_end_1 = ""
+on_counter = ""
+on_rpt_counter = ""
+on_touch = ""
+on_camera = ""
+object_type = "nophysic"
+handle_all = false
+is_bullet = false
+fixed_roation = false
+can_sleep = true
+gravity_scale = 1.0
+linear_velocity = Vector2( 0, 0 )
+angular_velocity = 0.0
+linear_damping = 0.0
+angular_damping = 0.0
+is_sensor = false
+density = 0.2
+friction = 0.2
+bounce = 0.2
+group_index = 0
+category = 0
+mask = 65535

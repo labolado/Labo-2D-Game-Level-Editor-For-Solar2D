@@ -1,0 +1,32 @@
+--
+-- For more information on build.settings see the Project Build Settings Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings =
+{
+    orientation =
+    {
+        default = "landscapeRight",
+        supported =
+        {
+            "landscapeLeft", "landscapeRight"
+        },
+    },
+    iphone =
+    {
+        xcassets = "Images.xcassets",
+        plist =
+        {
+            UILaunchStoryboardName = "LaunchScreen",
+            ITSAppUsesNonExemptEncryption = false, -- This sample doesn't use custom encryption
+        },
+    },
+    window =
+    {
+        titleText =
+        {
+            default = "Godot Corona Editor",
+        },
+    },
+}
