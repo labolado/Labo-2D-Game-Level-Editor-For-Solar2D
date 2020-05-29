@@ -1,4 +1,4 @@
-Labo 2D Game Level Editor, An 2D racing and platform game editor for Solar2D
+Labo 2D Game Level Editor, a 2D racing and platform game editor for Solar2D
 
 This is a level editor cut from the level editor used inside labo lado team. It is based on GodotEngine and takes a lot of ideas from levelhelper1. it has been used in our commercial products. Due to our limited energy, we only provide sample codes, no documentation. If you want to  use it, you may need to read and extend the codes yourself. if you can master it it will be a powerful editor. We hope that one day, we or others can turn it into a generic 2D Level Editor. In theory, this editor should be cross-platform, but we have only used it on macos now.
 
